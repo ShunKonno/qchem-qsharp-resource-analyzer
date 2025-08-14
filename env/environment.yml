@@ -1,0 +1,19 @@
+name: qchem-qsharp-ds
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - lightgbm
+  - pyscf
+  - jupyterlab
+  - pip:
+      - qsharp
+      - qsharp-chemistry
+      - rdkit-pypi
+      - seaborn
+      - shap
