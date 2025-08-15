@@ -1,0 +1,6 @@
+basis: ["STO-3G", "6-31G"]
+active_space: ["full", "homo±1"]
+encoding: ["JW", "BK"]
+decomposition: ["Trotter"]
+target_error_mHa: [0.8, 1.6]
+phys_error_rate: [1.0e-3, 1.0e-4]
