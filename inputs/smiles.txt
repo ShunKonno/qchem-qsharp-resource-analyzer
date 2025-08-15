@@ -1,6 +1,0 @@
-# SMILES input file
-# Place SMILES strings here, one per line
-# Format: SMILES_string [optional_name]
-# Example:
-# CCO ethanol
-# C1=CC=CC=C1 benzene
