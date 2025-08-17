@@ -1,0 +1,12 @@
+name: develop
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - qutip=5.2.*
+  - pyscf=2.10.*
+  - ipython
+  - jupyterlab
+  - numpy
+  - scipy
+  - matplotlib

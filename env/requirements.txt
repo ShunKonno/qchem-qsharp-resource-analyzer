@@ -1,0 +1,25 @@
+# Core quantum packages (conservative versions for stability)
+# If qsharp import issues persist, uncomment the fallback version below
+qsharp==0.28.0
+qsharp-chemistry==0.28.0
+
+# FALLBACK VERSION (uncomment if qsharp import fails):
+# # Core quantum packages (fallback - no qsharp)
+# # qsharp==0.28.0
+# # qsharp-chemistry==0.28.0
+
+# Scientific computing
+pyscf
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.5.0
+pyyaml>=6.0
+
+# Development tools
+jupyterlab
+lightgbm
+shap
+
+# Additional dependencies for quantum chemistry
+scipy>=1.7.0
+scikit-learn>=1.0.0
