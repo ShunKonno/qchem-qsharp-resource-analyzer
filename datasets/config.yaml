@@ -1,0 +1,31 @@
+# CASグリッド/誤り訂正前提/入出力の設定
+dataset:
+  # CASグリッド設定
+  cas_grid:
+    min_electrons: 2
+    max_electrons: 20
+    min_orbitals: 2
+    max_orbitals: 20
+    step_size: 2
+  
+  # 誤り訂正前提設定
+  error_correction:
+    surface_code: true
+    code_distance: 3
+    logical_error_rate: 1e-6
+  
+  # 入出力設定
+  input:
+    molecules_file: "data/raw/molecules.csv"
+    qchem_output_dir: "data/raw/qchem_outputs"
+  
+  output:
+    processed_dir: "data/processed"
+    features_dir: "data/features"
+    cache_dir: "data/cache"
+  
+  # 処理設定
+  processing:
+    max_workers: 4
+    chunk_size: 100
+    resume: true

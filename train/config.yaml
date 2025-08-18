@@ -1,0 +1,39 @@
+# モデル&訓練ハイパラ設定
+training:
+  # モデル設定
+  model:
+    type: "gnn"
+    hidden_dim: 128
+    num_layers: 4
+    dropout: 0.1
+    activation: "relu"
+  
+  # 訓練設定
+  training:
+    batch_size: 32
+    learning_rate: 0.001
+    weight_decay: 1e-5
+    scheduler: "cosine"
+    warmup_steps: 1000
+  
+  # 最適化設定
+  optimizer:
+    type: "adamw"
+    betas: [0.9, 0.999]
+    eps: 1e-8
+  
+  # 損失関数設定
+  loss:
+    type: "mse"
+    multitask: true
+    task_weights:
+      qubits: 1.0
+      depth: 1.0
+      t_count: 1.0
+  
+  # 検証設定
+  validation:
+    split_ratio: 0.2
+    early_stopping: true
+    patience: 10
+    min_delta: 1e-4

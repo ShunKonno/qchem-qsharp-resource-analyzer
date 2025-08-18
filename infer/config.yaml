@@ -1,0 +1,31 @@
+# デフォルト推論設定
+inference:
+  # モデル設定
+  model:
+    path: "models/best_model.pt"
+    device: "auto"  # auto, cpu, cuda
+  
+  # 推論設定
+  inference:
+    batch_size: 64
+    num_workers: 4
+    use_amp: true
+  
+  # 出力設定
+  output:
+    format: "csv"  # csv, json, hdf5
+    include_confidence: true
+    save_predictions: true
+  
+  # 可視化設定
+  visualization:
+    cas_plane: true
+    color_map: "viridis"
+    dpi: 300
+    save_format: "png"
+  
+  # 後処理設定
+  postprocessing:
+    filter_outliers: true
+    outlier_threshold: 3.0
+    smooth_predictions: false
